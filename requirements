@@ -1,0 +1,13 @@
+### requirements.txt
+```plaintext
+streamlit
+pytesseract
+pandas
+PyPDF2
+Pillow
+google-generativeai
+spacy
+openpyxl
+xlrd
+xlsxwriter
+python -m spacy download en_core_web_sm
