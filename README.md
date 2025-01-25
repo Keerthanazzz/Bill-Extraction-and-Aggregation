@@ -34,27 +34,6 @@ Tesseract OCR: You need to install Tesseract OCR to process images:
 Download and install Tesseract from here.
 Add the Tesseract path to your environment variables or specify it directly in the script:
 pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-Google Generative AI API Key:
-
-To integrate AI-powered data refinement, configure your API key for Google Generative AI by setting it in the script:
-genai.configure(api_key="YOUR_API_KEY")
-Configuration
-Before running the application, you may need to adjust the following configuration settings:
-
-Tesseract Path: Make sure Tesseract is properly configured for your system:
-
-pytesseract.tesseract_cmd = r'C:\Path\To\Tesseract\tesseract.exe'
-Excel File Path: Set the path where the extracted data will be stored:
-
-EXCEL_FILE_PATH = 'path_to_save_data/eng.xlsx'
-Google API Key: Set your Google API key for data enhancement:
-
-genai.configure(api_key="YOUR_API_KEY")
-Usage
-Run the Application: Launch the Streamlit application by running:
-
-streamlit run app.py
-Upload Invoice: Upload invoices in PDF or image format via the web interface.
 
 Extract Data: The application will extract structured data (e.g., invoice number, GST number, product details) from the uploaded file.
 
